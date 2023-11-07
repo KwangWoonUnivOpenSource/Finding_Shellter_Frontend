@@ -1,0 +1,9 @@
+.home{
+    color: cadetblue;
+    background-color: azure;
+    font-size: medium;
+    height: auto;
+    align-items: center;
+    min-height: 100%;
+    padding-bottom: 20px;
+}
