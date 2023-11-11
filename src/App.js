@@ -1,9 +1,9 @@
 import { Route,Routes } from "react-router-dom";
-import Nav from "./components/Nav";
-import Header from "./components/Header";
-import Home from "./components/Home";
+import Nav from "./components/nav/Nav";
+import Header from "./components/header/Header";
+import Home from "./pages/Home";
 import Search from "./components/Search";
-import Footer from "./components/Footer";
+import Footer from "./components/footer/Footer";
 
 function App() {
   return (
