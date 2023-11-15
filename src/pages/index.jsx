@@ -1,9 +1,14 @@
+<<<<<<< HEAD:src/pages/Home.jsx
 <<<<<<< HEAD
+=======
+import Kakao from '../components/KakaoMap'
+>>>>>>> 3ec8c9b1499d704ad8f7fe921ca036e2641597e6:src/pages/index.jsx
 import './Home.module.css'
 import Post from '../components/KakaoPostService/Post'
 export default function Home(){
     return (
         <div className="home">
+<<<<<<< HEAD:src/pages/Home.jsx
           <Post/>
 =======
 import style from './Home.module.css';
@@ -22,6 +27,9 @@ function Home(){
             <SearchAddress/>
             
 >>>>>>> origin
+=======
+            <Kakao/>
+>>>>>>> 3ec8c9b1499d704ad8f7fe921ca036e2641597e6:src/pages/index.jsx
         </div>
     );
 }
