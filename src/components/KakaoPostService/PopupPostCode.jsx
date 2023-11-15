@@ -1,7 +1,8 @@
-import React from 'react';
+import React ,{useState} from 'react';
 import DaumPostcode from "react-daum-postcode";
-import axios from 'axios';
+ 
 const PopupPostCode = (props) => {
+  const [adrs,setAdrs] = useState(null)
 	// 우편번호 검색 후 주소 클릭 시 실행될 함수, data callback 용
     const handlePostCode = (data) => {
         let fullAddress = data.address;
@@ -19,16 +20,8 @@ const PopupPostCode = (props) => {
         console.log(data)
         console.log(fullAddress)
         console.log(data.zonecode)
-        axios.post("localhost:8080/search",{
-          address:fullAddress
-        }).then(res =>{
-            
-        })
-        .catch(e=>{
-          console.log(e)
-        })
+        setAdrs(fullAddress)
         props.onClose()
-
     }
  
     const postCodeStyle = {
@@ -41,10 +34,13 @@ const PopupPostCode = (props) => {
       };
  
     return(
-        <div>
+      <>
+        <div className='pc'>
             <DaumPostcode style={postCodeStyle} onComplete={handlePostCode} />
+
             <button type='button' onClick={() => {props.onClose()}} className='postCode_btn'>닫기</button>
         </div>
+      </>
     )
 }
  

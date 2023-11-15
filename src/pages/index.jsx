@@ -1,16 +1,3 @@
-<<<<<<< HEAD:src/pages/Home.jsx
-<<<<<<< HEAD
-=======
-import Kakao from '../components/KakaoMap'
->>>>>>> 3ec8c9b1499d704ad8f7fe921ca036e2641597e6:src/pages/index.jsx
-import './Home.module.css'
-import Post from '../components/KakaoPostService/Post'
-export default function Home(){
-    return (
-        <div className="home">
-<<<<<<< HEAD:src/pages/Home.jsx
-          <Post/>
-=======
 import style from './Home.module.css';
 import SearchAddress from "../components/SearchAdress";
 function Home(){
@@ -24,12 +11,7 @@ function Home(){
             <p>주거지역의 대피소가 검색되지 않을 경우(법정동과 행정동의 차이) 인근 지역으로 재검색 시필요</p>
             <p>*** 타 시스템 연계를 통하여 제공되는 정보입니다. 조회가 지연될 수 있습니다.</p>
             </div>
-            <SearchAddress/>
             
->>>>>>> origin
-=======
-            <Kakao/>
->>>>>>> 3ec8c9b1499d704ad8f7fe921ca036e2641597e6:src/pages/index.jsx
         </div>
     );
 }
