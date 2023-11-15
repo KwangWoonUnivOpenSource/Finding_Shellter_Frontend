@@ -1,5 +1,4 @@
 import style from './Home.module.css';
-import SearchAddress from "../components/SearchAdress";
 function Home(){
     return (
         <div>

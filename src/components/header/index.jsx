@@ -5,6 +5,8 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Outlet } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
+import Footer from "../Footer";
+
  function Header(){
 const navigate = useNavigate();
   return (
@@ -20,7 +22,7 @@ const navigate = useNavigate();
         </Container>
       </Navbar>
         <Outlet>
-          
+        <Footer/>
       </Outlet>
     </div>
   );
