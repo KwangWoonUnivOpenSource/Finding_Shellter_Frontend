@@ -4,17 +4,18 @@ import Container from 'react-bootstrap/Container';
 import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Outlet } from 'react-router-dom';
+import { useNavigate } from 'react-router-dom';
  function Header(){
-
+const navigate = useNavigate();
   return (
     <div>
 
       <Navbar  className = {style.nav} bg="primary" data-bs-theme="dark">
         <Container>
-          <Navbar.Brand href="#home">Finding Shelter</Navbar.Brand>
+          <Navbar.Brand onClick={() => { navigate('/');}}>Finding Shelter</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link href="#home">민방위 훈련 시 대피 요령</Nav.Link>
-            <Nav.Link href="#features">지진 발생 시 대피요령</Nav.Link>
+            <Nav.Link  onClick={() => { navigate('/howtoresque');}}>민방위 훈련 시 대피 요령</Nav.Link>
+            <Nav.Link  onClick={() => { navigate('/earthquake');}}>지진 발생 시 대피요령</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
