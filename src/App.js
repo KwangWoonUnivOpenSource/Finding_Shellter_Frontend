@@ -1,12 +1,8 @@
-import { Routes, Route, Link, useNavigate, Outlet } from 'react-router-dom'
+import { Routes, Route} from 'react-router-dom'
 import Header from './components/header';
 import Home from "./pages";
 import Footer from "./components/footer";
-import Post from './components/KakaoPostService/Post';
 import PostBind from './components/KakaoPostService/PostBind';
-import Header from "./components/header";
-import Home from "./pages/Home";
-import Footer from './components/footer';
 import War from "./pages/Escape/War";
 import Gas from "./pages/Escape/Gas";
 
@@ -21,6 +17,7 @@ function App() {
           <Route path = "/howtogas" element = {<Gas/>}></Route>
           </Route>
         </Routes>
+        <PostBind/>
         <Footer/>
     </div>
   );
