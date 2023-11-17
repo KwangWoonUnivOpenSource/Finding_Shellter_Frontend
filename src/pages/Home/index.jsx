@@ -1,7 +1,7 @@
 import style from './Home.module.css';
 function Home(){
     return (
-        <div>
+        <div className={style.scroll}>
             <div className={style.textbox}>
             <h1 className={`${style.h1} ${style.wrap}`}>빠른 대피소 찾기 서비스</h1>
             <p className={style.wrap}>· 시도, 시군구별로 대피소 정보를 조회하실 수 있습니다.</p>

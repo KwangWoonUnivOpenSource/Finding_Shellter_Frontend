@@ -1,0 +1,37 @@
+.wrap{
+  .scroll {
+    height: 500px;
+    overflow-y: scroll;
+    overflow-x: hidden;
+  }
+  font-family: Roboto;
+}
+  
+.top{
+  display: flex;
+    justify-content:center;
+    align-items: left;
+    flex-direction: column;
+    font-family: Roboto;
+    font-style: normal;
+    font-size: 20px;
+    line-height: 30px;
+    border-radius: 8px;
+    border: 1.5px solid #A9A9A9;
+    width: 80%;
+    margin-left: 10%;
+    margin-right: 25%;
+    margin-top: 30px;
+}
+.caroitem{
+  color: black;
+}
+.carousel{
+    width: 80%;
+    height: 400px;
+    border-radius: 8px;
+    border: 1.5px solid #A9A9A9;
+    margin-left: 10%;
+    margin-right: 25%;
+    margin-top: 40px;
+}
