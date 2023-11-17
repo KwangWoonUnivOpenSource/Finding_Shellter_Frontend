@@ -3,14 +3,16 @@ import Header from './components/header';
 import Home from "./pages";
 import Footer from "./components/footer";
 import Post from './components/KakaoPostService/Post';
-
+import PostBind from './components/KakaoPostService/PostBind';
 function App() {
   return (
     <div className="App">
       <Routes>
         <Route  path ="/" element = {<Home/>}></Route>
         </Routes>
-       <Post/>
+       <Home/>
+       <PostBind/>
+
        <Footer/>
     </div>
   );
