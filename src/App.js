@@ -8,13 +8,11 @@ function App() {
   return (
     <div className="App">
       <Routes>
-        
-        <Route path ="/" element = {<Header/>}>
-     
-          </Route>
+        <Route  path ="/" element = {<Home/>}></Route>
         </Routes>
        <Home/>
        <PostBind/>
+
        <Footer/>
     </div>
   );
