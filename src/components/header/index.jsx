@@ -5,25 +5,27 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Outlet } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import Footer from "../Footer";
+import Footer from "../footer";
 
  function Header(){
 const navigate = useNavigate();
   return (
     <div>
 
-      <Navbar  className = {style.nav} bg="primary" data-bs-theme="dark">
+      <Navbar  className = {style.nav} bg="black" data-bs-theme="dark">
         <Container>
           <Navbar.Brand onClick={() => { navigate('/');}}>Finding Shelter</Navbar.Brand>
           <Nav className="me-auto">
-            <Nav.Link  onClick={() => { navigate('/howtoresque');}}>민방위 훈련 시 대피 요령</Nav.Link>
-            <Nav.Link  onClick={() => { navigate('/earthquake');}}>지진 발생 시 대피요령</Nav.Link>
+            <Nav.Link  onClick={() => { navigate('/howtowar');}}>민방위 훈련 시 대피 요령</Nav.Link>
+            <Nav.Link  onClick={() => { navigate('/howtoearthquake');}}>화생방 발생 시 대피요령</Nav.Link>
+            <Nav.Link  onClick={() => { navigate('/howtoearthquake');}}>수상한 상황 발생 시 신고요령</Nav.Link>
+            <Nav.Link  onClick={() => { navigate('/howtoearthquake');}}>수상한 상황 발생 시 신고요령</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
         <Outlet>
-        <Footer/>
       </Outlet>
+      <Footer/>
     </div>
   );
 };

@@ -4,16 +4,24 @@ import Home from "./pages";
 import Footer from "./components/footer";
 import Post from './components/KakaoPostService/Post';
 import PostBind from './components/KakaoPostService/PostBind';
+import Header from "./components/header";
+import Home from "./pages/Home";
+import Footer from './components/footer';
+import War from "./pages/Escape/War";
+import Gas from "./pages/Escape/Gas";
+
+
 function App() {
   return (
     <div className="App">
       <Routes>
-        <Route  path ="/" element = {<Home/>}></Route>
+        <Route element = {<Header/>}>
+          <Route  path ="/" element = {<Home/>}></Route>
+          <Route path = "/howtowar" element = {<War/>}></Route>
+          <Route path = "/howtogas" element = {<Gas/>}></Route>
+          </Route>
         </Routes>
-       <Home/>
-       <PostBind/>
-
-       <Footer/>
+        <Footer/>
     </div>
   );
 }
