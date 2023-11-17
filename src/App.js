@@ -3,7 +3,7 @@ import Header from './components/header';
 import Home from "./pages";
 import Footer from "./components/footer";
 import Post from './components/KakaoPostService/Post';
-
+import PostBind from './components/KakaoPostService/PostBind';
 function App() {
   return (
     <div className="App">
@@ -14,7 +14,7 @@ function App() {
           </Route>
         </Routes>
        <Home/>
-       <Post/>
+       <PostBind/>
        <Footer/>
     </div>
   );
