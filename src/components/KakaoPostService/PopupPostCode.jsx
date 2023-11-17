@@ -1,8 +1,12 @@
-import React ,{useState} from 'react';
+import React ,{useContext, useState} from 'react';
 import DaumPostcode from "react-daum-postcode";
- 
+import { AppContext } from './PostBind';
+
+
+
 const PopupPostCode = (props) => {
-  const [adrs,setAdrs] = useState(null)
+    const {setSub, setAdrs} = useContext(AppContext) 
+
 	// 우편번호 검색 후 주소 클릭 시 실행될 함수, data callback 용
     const handlePostCode = (data) => {
         let fullAddress = data.address;
@@ -21,6 +25,7 @@ const PopupPostCode = (props) => {
         console.log(fullAddress)
         console.log(data.zonecode)
         setAdrs(fullAddress)
+        setSub(true)
         props.onClose()
     }
  
@@ -37,8 +42,7 @@ const PopupPostCode = (props) => {
       <>
         <div className='pc'>
             <DaumPostcode style={postCodeStyle} onComplete={handlePostCode} />
-
-            <button type='button' onClick={() => {props.onClose()}} className='postCode_btn'>닫기</button>
+            <button type='button' onClick={() => { props.onClose()}} className='postCode_btn'>닫기</button>
         </div>
       </>
     )
