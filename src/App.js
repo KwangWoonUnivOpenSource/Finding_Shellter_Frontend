@@ -9,7 +9,6 @@ import Gas from "./pages/Escape/Gas";
 import Report from "./pages/Escape/Report";
 
 
-
 function App() {
   return (
     <div className="App">
@@ -21,7 +20,9 @@ function App() {
           <Route path = "/howtoreport" element = {<Report/>}></Route>
           </Route>
         </Routes>
-      
+
+        <PostBind/>
+ 
     </div>
   );
 }
