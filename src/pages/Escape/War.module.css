@@ -8,7 +8,7 @@
 }
   
 .top{
-  display: flex;
+    display: flex;
     justify-content:center;
     align-items: left;
     flex-direction: column;
@@ -19,12 +19,16 @@
     border-radius: 8px;
     border: 1.5px solid #A9A9A9;
     width: 80%;
+    height: 330px;
     margin-left: 10%;
     margin-right: 25%;
     margin-top: 30px;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 20px;
 }
-.caroitem{
-  color: black;
+.toph3{
+  color: rgb(255, 77, 0);
 }
 .carousel{
     width: 80%;
@@ -34,4 +38,9 @@
     margin-left: 10%;
     margin-right: 25%;
     margin-top: 40px;
+    padding-left: 30px;
+    padding-right: 30px;
+}
+.h3{
+
 }

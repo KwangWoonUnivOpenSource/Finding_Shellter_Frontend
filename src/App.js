@@ -1,7 +1,7 @@
 import { Routes, Route, Link, useNavigate, Outlet } from 'react-router-dom'
-import Header from "./components/header";
+import Header from "./components/Header";
 import Home from "./pages/Home";
-import Footer from './components/footer';
+import Footer from './components/Footer';
 import War from "./pages/Escape/War";
 import Gas from "./pages/Escape/Gas";
 

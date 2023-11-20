@@ -5,7 +5,7 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Outlet } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import Footer from "../footer";
+import Footer from "../Footer";
 
  function Header(){
 const navigate = useNavigate();
@@ -19,7 +19,7 @@ const navigate = useNavigate();
             <Nav.Link  onClick={() => { navigate('/howtowar');}}>민방위 훈련 시 대피 요령</Nav.Link>
             <Nav.Link  onClick={() => { navigate('/howtoearthquake');}}>화생방 발생 시 대피요령</Nav.Link>
             <Nav.Link  onClick={() => { navigate('/howtoearthquake');}}>수상한 상황 발생 시 신고요령</Nav.Link>
-            <Nav.Link  onClick={() => { navigate('/howtoearthquake');}}>수상한 상황 발생 시 신고요령</Nav.Link>
+            <Nav.Link  onClick={() => { navigate('/howtoearthquake');}}>비상 시를 위해 비치할 물자들</Nav.Link>
           </Nav>
         </Container>
       </Navbar>
