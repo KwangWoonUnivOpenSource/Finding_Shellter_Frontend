@@ -1,10 +1,10 @@
 import { Routes, Route} from 'react-router-dom'
-import Header from './components/header';
-import Home from "./pages";
+import Header from './components/header'; 
 import Footer from "./components/footer";
 import PostBind from './components/KakaoPostService/PostBind';
 import War from "./pages/Escape/War";
 import Gas from "./pages/Escape/Gas";
+import Home from './pages/Home';
 
 
 function App() {
