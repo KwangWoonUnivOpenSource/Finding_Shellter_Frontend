@@ -1,10 +1,12 @@
-import { Routes, Route} from 'react-router-dom'
-import Header from './components/header'; 
-import Footer from "./components/footer";
+import { Routes, Route, Link, useNavigate, Outlet } from 'react-router-dom'
+import Post from './components/KakaoPostService/Post';
 import PostBind from './components/KakaoPostService/PostBind';
+import Header from "./components/Header";
+import Home from "./pages/Home";
+import Footer from './components/Footer';
 import War from "./pages/Escape/War";
 import Gas from "./pages/Escape/Gas";
-import Home from './pages/Home';
+import Report from "./pages/Escape/Report";
 
 
 function App() {
@@ -15,10 +17,12 @@ function App() {
           <Route  path ="/" element = {<Home/>}></Route>
           <Route path = "/howtowar" element = {<War/>}></Route>
           <Route path = "/howtogas" element = {<Gas/>}></Route>
+          <Route path = "/howtoreport" element = {<Report/>}></Route>
           </Route>
         </Routes>
+
         <PostBind/>
-        <Footer/>
+ 
     </div>
   );
 }
