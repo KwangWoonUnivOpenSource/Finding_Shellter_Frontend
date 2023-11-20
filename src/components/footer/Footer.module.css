@@ -1,21 +1,25 @@
-.footer{
-    position: fixed;
-    bottom: 0;
-    width:100vw;
-    background-color: skyblue;
-    padding: 10px;
-}
+
 .footerInfo{
     align-items: center;
     align-content: center;
 }
 .wrap{
-    border-top:1px solid black;
-    position: fixed;
-    bottom: 0;
     width:100vw;
+    display: flex;
+	justify-content: center;
+	height: 13vh;
+    border-top:1px solid black;
+    padding-top: 10px; 
+    bottom: 0;
+    background-color: rgba(233, 233, 239, 0.083);
+    margin-top: 40px;
+   
+}
+.btn{
+    width: 250px;
+    height: 20px;
+    border: none;
+    border-radius: 60px;
     background-color: whitesmoke;
-    padding: 10px;
     font-family: Roboto;
-    font-size: 6px;
 }

@@ -6,6 +6,8 @@ import Home from "./pages/Home";
 import Footer from './components/Footer';
 import War from "./pages/Escape/War";
 import Gas from "./pages/Escape/Gas";
+import Report from "./pages/Escape/Report";
+
 
 
 function App() {
@@ -16,9 +18,10 @@ function App() {
           <Route  path ="/" element = {<Home/>}></Route>
           <Route path = "/howtowar" element = {<War/>}></Route>
           <Route path = "/howtogas" element = {<Gas/>}></Route>
+          <Route path = "/howtoreport" element = {<Report/>}></Route>
           </Route>
         </Routes>
-        <Footer/>
+      
     </div>
   );
 }
