@@ -27,7 +27,6 @@ const Post = () => {
                     </PopupDom>
                 )}
             </div>
-   
         </div>
     )
 }

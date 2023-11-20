@@ -1,9 +1,10 @@
 import { useState,useEffect } from "react";
 import ShowShellters from "./ShowShellters";
+import { async } from "q";
 
 async function searchAPI(address){
     
-    const url = '/search'
+    const url = 'http://localhost:8080/search'
         const options = {
             method: 'POST',
             headers: {
@@ -18,12 +19,10 @@ async function searchAPI(address){
 
 }
 
-const Search = (props) => {
+async function Search  (props)  {
     const [data, setData] = useState(null)
 
-    useEffect(()=>{
-        setData(searchAPI())
-    },[])
+    await setData(searchAPI())
     return (
         <div>
             <h1>List</h1>
