@@ -1,0 +1,30 @@
+.top{
+  display: flex;
+  justify-content:center;
+  align-items: left;
+  flex-direction: column;
+  font-family: Roboto;
+  font-style: normal;
+  font-size: 20px;
+  line-height: 30px;
+  border-radius: 8px;
+  border: 1.5px solid #A9A9A9;
+  width: 79vw;
+  height: 330px;
+  margin-left: 10%;
+  margin-right: 25%;
+  margin-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 20px;
+  overflow: auto;
+  font-family: Roboto;
+}
+.toph3{
+  color: rgb(255, 77, 0);
+  font-family: Roboto;
+}
+.p{
+  line-height: 40px;
+  font-family: Roboto;
+}
