@@ -1,9 +1,8 @@
 import { Routes, Route, Link, useNavigate, Outlet } from 'react-router-dom'
 import Post from './components/KakaoPostService/Post';
 import PostBind from './components/KakaoPostService/PostBind';
-import Header from "./components/Header";
+import Header from './components/header/index'
 import Home from "./pages/Home";
-import Footer from './components/Footer';
 import War from "./pages/Escape/War";
 import Gas from "./pages/Escape/Gas";
 import Report from "./pages/Escape/Report";
@@ -18,11 +17,9 @@ function App() {
           <Route path = "/howtowar" element = {<War/>}></Route>
           <Route path = "/howtogas" element = {<Gas/>}></Route>
           <Route path = "/howtoreport" element = {<Report/>}></Route>
+          <Route path ="/post" element = {<PostBind/>}></Route>
           </Route>
         </Routes>
-
-        <PostBind/>
- 
     </div>
   );
 }
