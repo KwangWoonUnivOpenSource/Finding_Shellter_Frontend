@@ -4,8 +4,8 @@ import Row from 'react-bootstrap/Row'
 import Col from 'react-bootstrap/Col'
 import { useNavigate } from 'react-router';
 import { IoLogoGithub } from "react-icons/io";
-
-export default function Footer(){
+import { memo } from "react";
+ function Footer(){
     const navigate = useNavigate();
     return (
         <div>
@@ -23,3 +23,4 @@ export default function Footer(){
         
     );
 }
+export default memo(Footer)
