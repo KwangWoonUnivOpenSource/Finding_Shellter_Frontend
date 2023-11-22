@@ -5,9 +5,10 @@ import Nav from 'react-bootstrap/Nav';
 import Navbar from 'react-bootstrap/Navbar';
 import { Outlet } from 'react-router-dom';
 import { useNavigate } from 'react-router-dom';
-import Footer from "../Footer";
+import Footer from '../footer/index'
 import { RiAlarmWarningLine } from "react-icons/ri";
- function Header(){
+import { memo } from "react";
+function Header(){
 const navigate = useNavigate();
   return (
     <div>
@@ -20,6 +21,8 @@ const navigate = useNavigate();
             <Nav.Link  onClick={() => { navigate('/howtogas');}}>화생방 발생 시 대피요령</Nav.Link>
             <Nav.Link  onClick={() => { navigate('/howtoreport');}}>수상한 상황 발생 시 신고요령</Nav.Link>
             <Nav.Link  onClick={() => { navigate('/howtoprepare');}}>비상 시를 위해 비치할 물자들</Nav.Link>
+            <Nav.Link  onClick={() => { navigate('/post');}}>post</Nav.Link>
+            
           </Nav>
         </Container>
       </Navbar>
@@ -30,4 +33,4 @@ const navigate = useNavigate();
   );
 };
 
-export default Header;
+export default memo(Header);

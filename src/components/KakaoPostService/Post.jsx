@@ -4,7 +4,7 @@ import PopupPostCode from './PopupPostCode';
  
 const Post = () => {
     const [isPopupOpen, setIsPopupOpen] = useState(false)
-    const [adrs , setAdrs] = useState(null)
+
    
 	// 팝업창 열기
     const openPostCode = () => {
