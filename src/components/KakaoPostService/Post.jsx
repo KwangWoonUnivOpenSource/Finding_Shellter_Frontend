@@ -1,7 +1,7 @@
 import React, { useState,createContext } from 'react';
 import PopupDom from './PopupDom';
 import PopupPostCode from './PopupPostCode';
- 
+import style from './Post.module.css';
 const Post = () => {
     const [isPopupOpen, setIsPopupOpen] = useState(false)
 
@@ -18,8 +18,9 @@ const Post = () => {
  
     return(
         <div>
-            <button type='button' onClick={openPostCode}>우편번호 검색</button>
-           
+            <div className={style.btncont}>
+            <button type='button' className={style.btn} onClick={openPostCode}>빠르게 대피소 찾기</button>
+            </div>
             <div id='popupDom'>
                 {isPopupOpen && (
                     <PopupDom>

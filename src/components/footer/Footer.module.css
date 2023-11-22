@@ -1,18 +1,16 @@
 
-.footerInfo{
-    align-items: center;
-    align-content: center;
-}
 .wrap{
     width:100vw;
     display: flex;
 	justify-content: center;
-	height: 13vh;
+	height: 12vh;
     border-top:1px solid black;
     padding-top: 10px; 
     bottom: 0;
     background-color: rgba(233, 233, 239, 0.083);
     margin-top: 40px;
+    overflow: hidden;
+    font-family: Roboto;
    
 }
 .btn{
@@ -22,4 +20,21 @@
     border-radius: 60px;
     background-color: whitesmoke;
     font-family: Roboto;
+    overflow: hidden;
+   
+}
+a{
+    text-decoration-line: none;
+    font-family: Roboto;
+}
+.src{
+    display: flex;
+    justify-content:space-around;
+    font-size: 10px;
+    color: black;
+    width: 250px;
+    height: 1px;
+    position: absolute;
+    font-family: Roboto;
+    transform: translate(-80%, 6.5vh); /* 컨텐츠를 가운데로 이동 */
 }
