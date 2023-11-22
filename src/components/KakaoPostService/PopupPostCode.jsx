@@ -2,7 +2,7 @@ import React ,{useContext, useState} from 'react';
 import DaumPostcode from "react-daum-postcode";
 import { AppContext } from './PostBind';
 import { memo } from 'react';
-
+import style from './PopupPostCode.module.css';
 
 const PopupPostCode = (props) => {
     const  {setAdrs} = useContext(AppContext) 
@@ -30,21 +30,25 @@ const PopupPostCode = (props) => {
  
     const postCodeStyle = {
         display: "block",
-        position: "absolute",
-        top: "10%",
-        width: "600px",
-        height: "600px",
+        position: "relative",
+        top: "20%",
+        width: "80vw",
+        height: "40vh",
         padding: "7px",
+        
       };
+    
  
     return(
       <>
         <div className='pc'>
-            <DaumPostcode style={postCodeStyle} onComplete={handlePostCode} />
-            <button type='button' onClick={() => { props.onClose()}} className='postCode_btn'>닫기</button>
+            <DaumPostcode className={postCodeStyle} onComplete={handlePostCode} />
+            <div className={style.btncont}>
+            <button type='button' className = {`${style.btn}`} onClick={() => { props.onClose()}} >닫기</button>
+            </div>
         </div>
       </>
     )
 }
- 
+// className='postCode_btn'
 export default memo(PopupPostCode);

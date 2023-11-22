@@ -1,11 +1,13 @@
-.header{
-    color: skyblue;
-    text-align: center;
-    text-decoration: none;
-    margin: auto;
-}
+
 .nav{
     height: 100px;
     box-shadow: 0 0 4px black;
     background-color: rgb(28, 28, 47);
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 100;
+}
+.bottom{
+    margin-top: 20vh;
 }

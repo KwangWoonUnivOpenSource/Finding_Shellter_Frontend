@@ -1,14 +1,12 @@
 import React from "react";
 import style from "./Footer.module.css"
-import Row from 'react-bootstrap/Row'
-import Col from 'react-bootstrap/Col'
 import { useNavigate } from 'react-router';
 import { IoLogoGithub } from "react-icons/io";
 import { memo } from "react";
  function Footer(){
     const navigate = useNavigate();
     return (
-        <div>
+        
         <div className={style.wrap}>
         <div>
         <h3>오픈소스 소프트웨어 개발 8조</h3>
@@ -25,7 +23,7 @@ import { memo } from "react";
         <p>영등포 구청</p>
         </div>
         </div>
-        </div>
+        
         
     );
 }

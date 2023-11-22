@@ -1,0 +1,12 @@
+.btn{
+  background-color:rgb(28, 28, 47);
+  font-family: Roboto;
+  color: rgb(191, 194, 195);
+  border-radius: 100px;
+  width: 600px;
+}
+.btncont{
+  display: flex;
+  justify-content: center;
+  margin-bottom: 20px;
+}
