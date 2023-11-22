@@ -3,7 +3,6 @@ import Post from './components/KakaoPostService/Post';
 import PostBind from './components/KakaoPostService/PostBind';
 import Header from "./components/Header";
 import Home from "./pages/Home";
-import Footer from './components/Footer';
 import War from "./pages/Escape/War";
 import Gas from "./pages/Escape/Gas";
 import Report from "./pages/Escape/Report";
