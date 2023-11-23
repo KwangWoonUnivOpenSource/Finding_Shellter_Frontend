@@ -8,18 +8,6 @@
 
 ## 사용 방법
 
-**대피 요령 페이지**
-
-> 위급 상황 발생 시 긴급 대피 요령을 확인한다.
-> 
-- 민방위 훈련 시 대피요령
-
-![no1](https://user-images.githubusercontent.com/118882456/285101395-479e457a-9b53-4596-b5b4-dcdba797fb6c.png)
-
-- 화생방 발생 시 대피요령
-
-![no2](https://user-images.githubusercontent.com/118882456/285101438-e3957c06-6209-4041-9514-668d2804c4db.png)
-
 **대피소 메인 페이지**
 
 > “빠르게 대피소 찾기”를 클릭하면 Kakao 우편번호 서비스로 이동한다. 주소 입력 창에 현위치 정보를 입력하여 요청한다.
@@ -53,6 +41,18 @@ KakaoMap으로 이동하여 길 찾기를 할 수 있도록 한다.
 > 
 
 ![no6](https://user-images.githubusercontent.com/118882456/285101580-29ace6a9-e0b6-4d3a-ba95-53870f4e307a.png)
+
+**대피 요령 페이지**
+
+> 위급 상황 발생 시 긴급 대피 요령을 확인한다.
+> 
+- 민방위 훈련 시 대피요령
+
+![no1](https://user-images.githubusercontent.com/118882456/285101395-479e457a-9b53-4596-b5b4-dcdba797fb6c.png)
+
+- 화생방 발생 시 대피요령
+
+![no2](https://user-images.githubusercontent.com/118882456/285101438-e3957c06-6209-4041-9514-668d2804c4db.png)
 
 ## 설치 방법
 >1. 배포된 주소(바로 실행)
