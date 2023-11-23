@@ -54,8 +54,33 @@ KakaoMap으로 이동하여 길 찾기를 할 수 있도록 한다.
 
 ![no6](https://user-images.githubusercontent.com/118882456/285101580-29ace6a9-e0b6-4d3a-ba95-53870f4e307a.png)
 
-## 설치 방법(프론트엔드 배포 주소)
-https://findin-shelter-fe.vercel.app/
+## 설치 방법
+https://findin-shelter-fe.vercel.app/ (프론트엔드 배포 주소)
+>**설치**
+
+>먼저, GitHub에서 프로젝트를 클론하세요.
+
+```bash
+git clone [GitHub 프로젝트 URL]
+```
+
+>프로젝트 디렉토리로 이동합니다.
+
+```bash
+cd [프로젝트 이름]
+```
+
+>필요한 패키지를 설치합니다.
+
+```bash
+npm install
+```
+**실행**
+
+>프로젝트를 실행하려면 다음 명령을 사용하세요.
+```bash
+npm start
+```
 
 ## 🧾 License 
 이 프로젝트는 MIT License를 따른다.
