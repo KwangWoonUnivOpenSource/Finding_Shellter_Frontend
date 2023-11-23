@@ -1,70 +1,58 @@
-# Getting Started with Create React App
+## 소프트웨어의 기능
 
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+- 위급 상황 발생 시 긴급 대피 요령을 알려준다.
+- 해당 서비스로 주소 정보를 입력하여 요청하면 주소 위치 기준에서 가까운 대피소를 추출한다.
+- 입력한 주소 정보에서 정해진 반경(10km) 내에 있는 대피소 3곳을 가까운 순서대로 추천한다.
+- 대피소 3곳과 함께 제공된 링크를 통해 빠르게 길찾기를 할 수 있다.
+- 추출한 대피소 데이터는 길안내 및 로드뷰를 제공하여 더 빠른 대피소 찾기에 도움을 준다.
 
-## Available Scripts
+## 사용 방법
 
-In the project directory, you can run:
+**대피 요령 페이지**
 
-### `npm start`
+> 위급 상황 발생 시 긴급 대피 요령을 확인한다.
+> 
+- 민방위 훈련 시 대피요령
 
-Runs the app in the development mode.\
-Open [http://localhost:3000](http://localhost:3000) to view it in your browser.
+![no1](https://user-images.githubusercontent.com/118882456/285101395-479e457a-9b53-4596-b5b4-dcdba797fb6c.png)
 
-The page will reload when you make changes.\
-You may also see any lint errors in the console.
+- 화생방 발생 시 대피요령
 
-### `npm test`
+![no2](https://user-images.githubusercontent.com/118882456/285101438-e3957c06-6209-4041-9514-668d2804c4db.png)
 
-Launches the test runner in the interactive watch mode.\
-See the section about [running tests](https://facebook.github.io/create-react-app/docs/running-tests) for more information.
+**대피소 메인 페이지**
 
-### `npm run build`
+> “빠르게 대피소 찾기”를 클릭하면 Kakao 우편번호 서비스로 이동한다. 주소 입력 창에 현위치 정보를 입력하여 요청한다.
+> 
 
-Builds the app for production to the `build` folder.\
-It correctly bundles React in production mode and optimizes the build for the best performance.
+주소는 도로명 주소 또는 지번을 입력하여 요청 받는다.
 
-The build is minified and the filenames include the hashes.\
-Your app is ready to be deployed!
+주소는 정확한 상세 주소(동, 호수)를 제외한 주소 정보를 이용하여 추천한다.
 
-See the section about [deployment](https://facebook.github.io/create-react-app/docs/deployment) for more information.
+- ex) 서울 광운로 20
 
-### `npm run eject`
+![no3](https://user-images.githubusercontent.com/118882456/285101476-a7710d70-f36d-4c2b-8d09-383006639357.png)
 
-**Note: this is a one-way operation. Once you `eject`, you can't go back!**
+**대피소 결과 페이지**
 
-If you aren't satisfied with the build tool and configuration choices, you can `eject` at any time. This command will remove the single build dependency from your project.
+> 입력한 주소 위치 기준에서 정해진 반경(10km) 내에 있는 대피소 3곳을 가까운 순서대로 추천해준다.
+> 
 
-Instead, it will copy all the configuration files and the transitive dependencies (webpack, Babel, ESLint, etc) right into your project so you have full control over them. All of the commands except `eject` will still work, but they will point to the copied scripts so you can tweak them. At this point you're on your own.
+대피소의 이름, 대피소 주소, 입력 주소와 대피소 사이의 거리 또한 알 수 있다. 
 
-You don't have to ever use `eject`. The curated feature set is suitable for small and middle deployments, and you shouldn't feel obligated to use this feature. However we understand that this tool wouldn't be useful if you couldn't customize it when you are ready for it.
+![Untitled](https://user-images.githubusercontent.com/118882456/285101746-42c20403-2af6-407f-88d5-92084cbbcddd.png)
 
-## Learn More
+> 추출한 대피소 데이터의 “카카오 맵에서 길찾기”에서는 길안내를 제공한다.
+> 
 
-You can learn more in the [Create React App documentation](https://facebook.github.io/create-react-app/docs/getting-started).
+KakaoMap으로 이동하여 길 찾기를 할 수 있도록 한다. 
 
-To learn React, check out the [React documentation](https://reactjs.org/).
+![Untitled](https://user-images.githubusercontent.com/118882456/285101798-bd873e08-9d0a-49da-b387-9c5a6781e903.png)
 
-### Code Splitting
+> “로드뷰 보기”를 클릭하면 대피소 주변을 확인하여 정확한 위치를 파악할 수 있도록 한다.
+> 
 
-This section has moved here: [https://facebook.github.io/create-react-app/docs/code-splitting](https://facebook.github.io/create-react-app/docs/code-splitting)
+![no6](https://user-images.githubusercontent.com/118882456/285101580-29ace6a9-e0b6-4d3a-ba95-53870f4e307a.png)
 
-### Analyzing the Bundle Size
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size](https://facebook.github.io/create-react-app/docs/analyzing-the-bundle-size)
-
-### Making a Progressive Web App
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app](https://facebook.github.io/create-react-app/docs/making-a-progressive-web-app)
-
-### Advanced Configuration
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/advanced-configuration](https://facebook.github.io/create-react-app/docs/advanced-configuration)
-
-### Deployment
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/deployment](https://facebook.github.io/create-react-app/docs/deployment)
-
-### `npm run build` fails to minify
-
-This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
+## 설치 방법(프론트엔드 배포 주소)
+https://findin-shelter-fe.vercel.app/
