@@ -42,7 +42,8 @@ KakaoMap으로 이동하여 길 찾기를 할 수 있도록 한다.
 >처음 화면은 현재 위치를 기반으로 지도를 표시한다.
 >다른 위치를 클릭하면 마커가 생성되며 자동으로 로드뷰에도 적용된다.
 
-![Untitled](https://prod-files-secure.s3.us-west-2.amazonaws.com/6c8723d1-20cd-4dd8-bdbc-4e7077c0eef3/deae2280-b07b-4522-9d3e-48518aa41858/Untitled.png)
+![no5](https://prod-files-secure.s3.us-west-2.amazonaws.com/6c8723d1-20cd-4dd8-bdbc-4e7077c0eef3/deae2280-b07b-4522-9d3e-48518aa41858/Untitled.png)
+
 
 > “로드뷰 보기”를 클릭하면 대피소 주변을 확인하여 정확한 위치를 파악할 수 있도록 한다.
 > 
